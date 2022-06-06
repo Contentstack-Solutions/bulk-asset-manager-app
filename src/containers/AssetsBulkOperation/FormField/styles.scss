@@ -1,0 +1,51 @@
+.input-file-field-btn {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.controller {
+  margin-bottom: 2em;
+  padding: 0 1em 0 1em;
+
+  .select-wrapper {
+    width: 250px;
+    float: left;
+    margin-top: 1px;
+  }
+
+  .global-tag-wrapper {
+    width: 400px;
+    float: left;
+
+    .tag-body {
+      height: auto;
+      padding: 0px 6px 0px 6px;
+      border-radius: 6px;
+      background-color: #fafbfc;
+      transition: ease-in-out 0.1s;
+
+      &:hover {
+        background-color: #fdfdfd;
+      }
+    }
+  }
+
+  .folders-wrapper {
+    width: 220px;
+    float: left;
+    margin-left: 4em;
+  }
+
+  .upload-wrapper {
+    width: 200px;
+    float: left;
+  }
+
+  .Button {
+    margin-right: 1em;
+  }
+
+  .input-file-field {
+    display: none;
+  }
+}

@@ -1,0 +1,93 @@
+.images-container {
+  display: flex;
+  flex-flow: row wrap;
+
+  .card {
+    flex-basis: 17.9%;
+    margin: 1em;
+
+    .image-card {
+      padding: 15px;
+      background-color: #f7f9fc;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.06);
+
+      &:hover {
+        background-color: #edf1f7b0;
+      }
+
+      .delete-btn {
+        position: absolute;
+        right: 2px;
+        top: 2px;
+      }
+
+      .selected-image {
+        width: 100%;
+      }
+
+      .card-body {
+        height: auto;
+        padding: 0px 6px 0px 6px;
+        border-radius: 6px;
+        margin-top: 1em;
+        background-color: #ffff;
+
+        &:hover {
+          background-color: #fafbfc;
+        }
+      }
+    }
+  }
+
+  .empty-message-box {
+    padding: 5.5em 4em 5.5em 3em;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    margin: 0 1em 0 1em;
+    text-align: center;
+
+    .image-avatar {
+      height: 170px;
+      margin-bottom: 1em;
+    }
+
+    .instruction-text {
+      margin-top: 0.5em;
+      margin-bottom: 2.5em;
+    }
+
+    .file-uploader {
+      margin: auto;
+      height: 280px;
+      width: 100%;
+      border: dashed 2px #e3e7ee;
+      border-radius: 16px;
+      padding: 3em;
+      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.03);
+      transition: ease-in-out 0.2s;
+      background-color: #fafbfc;
+
+      &:hover {
+        border: dashed 2px #6c5ce7;
+        background-color: #fff;
+      }
+
+      span {
+        color: #647696 !important;
+        font-size: large !important;
+      }
+
+      svg {
+        display: none;
+      }
+
+      .file-types {
+        display: none;
+      }
+    }
+  }
+}
