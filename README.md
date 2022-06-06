@@ -1,5 +1,5 @@
 # bulk-asset-manager-app
-## marketplace dashboard React app
+## Marketplace dashboard React app
 This app allow users to upload images in bulk by drag and drop, and the ability to add global tags for images.
 
 ## Installation
