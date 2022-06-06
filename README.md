@@ -4,7 +4,9 @@ This app allow users to upload images in bulk by drag and drop, and the ability 
 
 ## Installation
 
-1. Copy .env_template variables to newly created .env files or environment variables.
-2. Update .env file variables with stack CMA token and API URL.
-3. Run npm install
-4. Run npm run dev
+1. created .env files or set environment variables.
+2. Copy .env_template variables to a newly created .env file.
+3. Update .env file variables with stack CMA token and API URL region.
+4. Host the application and get domain URL.
+5. Install app onto markeplace and set domain URL.
+6. https://www.contentstack.com/docs/developers/developer-hub/installing-your-app-via-developer-hub/
