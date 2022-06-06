@@ -77,6 +77,8 @@ export class AssetsBulkOperationDashboardWidget extends Component<
     if (event.target.files.length > 0) {
       this.setState({
         images: [],
+        selectedAssetFolder: null,
+        globalTags: [],
         resultsLog: [],
         isResults: false,
       });
@@ -105,6 +107,8 @@ export class AssetsBulkOperationDashboardWidget extends Component<
   handleFileDragAndDropChange = (event: any) => {
     this.setState({
       images: [],
+      selectedAssetFolder: null,
+      globalTags: [],
       resultsLog: [],
       isResults: false,
     });
@@ -167,9 +171,11 @@ export class AssetsBulkOperationDashboardWidget extends Component<
               this.state.resultsLog.push(result);
               if (this.state.resultsLog.length === this.state.images.length) {
                 this.setState({
-                  isLoading: false,
                   images: [],
-                  isResults: true,
+                  selectedAssetFolder: null,
+                  globalTags: [],
+                  resultsLog: [],
+                  isResults: false,
                 });
               }
             })
