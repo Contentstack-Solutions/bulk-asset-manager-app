@@ -7,7 +7,7 @@ import ErrorBoundary from "../../components/ErrorBoundary";
 import ConfigScreen from "../ConfigScreen";
 import SidebarWidget from "../SidebarWidget";
 import DashboardWidget from "../DashboardWidget";
-import CustomField from "../CustomField";
+// import CustomField from "../CustomField";
 /* Import node module CSS */
 import "@contentstack/venus-components/build/main.css";
 /* Import our CSS */

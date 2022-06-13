@@ -5,6 +5,7 @@ import "./styles.scss";
 
 const fileTypes = [
   "JPG",
+  "JPEG",
   "PNG",
   "GIF",
   "WEBP",
