@@ -14,6 +14,8 @@ This app allow users to upload images in bulk by drag and drop, and the ability 
 8. Add "/assets-bulk-operation-dashboard-widget" to path field.
 9. Marketplace App Installation documentation: https://www.contentstack.com/docs/developers/developer-hub/installing-your-app-via-developer-hub/
 
+![stack_dashboard_installation](https://github.com/Contentstack-Solutions/bulk-asset-manager-app/blob/main/src/assets/stack-dashboard-installation.png)
+
 ## Sceenshots
 
 ![asset_bulk_operation_ui](https://github.com/Contentstack-Solutions/bulk-asset-manager-app/blob/main/src/assets/asset-bulk-operation-ui.png)
