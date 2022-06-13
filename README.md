@@ -12,7 +12,7 @@ This app allow users to upload images in bulk by drag and drop, and the ability 
 6. Enable stack dashboard.
 7. Set Default width to Full Width.
 8. Add "/assets-bulk-operation-dashboard-widget" to path field.
-10. Please read the documentation if you have any questions: https://www.contentstack.com/docs/developers/developer-hub/installing-your-app-via-developer-hub/
+10. Marketplace App Installation documentation: https://www.contentstack.com/docs/developers/developer-hub/installing-your-app-via-developer-hub/
 
 ## Sceenshots
 
