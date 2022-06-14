@@ -42,6 +42,7 @@ class FormField extends Component<IProps> {
             >
               Clear
             </Button>
+            <span className="item-qty">{this.props.images.length ? this.props.images.length : 'No'} items</span>
           </div>
           <div
             style={{

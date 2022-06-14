@@ -1,4 +1,16 @@
 .layout-container {
   padding: 0 1em 5em 1em;
   margin-top: 0;
+
+  .Toastify__toast-container--bottom-center {
+    bottom: 4em;
+  }
+
+  .Toastify__toast {
+    background-color: #007a52!important;
+    border-radius: 10px;
+    min-height: 0;
+  }
+  
 }
+

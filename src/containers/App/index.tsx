@@ -13,7 +13,7 @@ import "@contentstack/venus-components/build/main.css";
 /* Import our CSS */
 import "./styles.scss";
 import AssetsBulkOperationDashboardWidget from "../AssetsBulkOperation";
-
+import 'react-toastify/dist/ReactToastify.css';
 const HomeRedirectHandler = function () {
   if (window?.location?.pathname !== "/") {
     return <Navigate to={{ pathname: window.location.pathname }} />;

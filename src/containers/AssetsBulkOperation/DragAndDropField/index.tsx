@@ -13,7 +13,8 @@ const fileTypes = [
   "BMP",
   "TIFF",
   "SVG",
-  "PSD",
+  "PDF",
+  "DOCX"
 ];
 
 interface IProps {

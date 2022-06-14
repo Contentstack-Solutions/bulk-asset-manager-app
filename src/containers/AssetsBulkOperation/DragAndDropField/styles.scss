@@ -7,20 +7,27 @@
     margin: 1em;
 
     .image-card {
-      padding: 15px;
+      padding: 8px;
       background-color: #f7f9fc;
-      border-radius: 10px;
+      border-radius: 8px;
       position: relative;
-      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.06);
+      box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.05);
+      transition: all .1s ease-in-out;
 
       &:hover {
         background-color: #edf1f7b0;
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.03);
       }
 
       .delete-btn {
         position: absolute;
-        right: 2px;
-        top: 2px;
+        right: -2px;
+        top: -2px;
+
+        &:hover {
+          background-color: #fafbfc;
+          color: #6c5ce7;
+        }
       }
 
       .selected-image {
@@ -77,8 +84,11 @@
       }
 
       span {
-        color: #647696 !important;
-        font-size: large !important;
+        text-decoration: none;
+        color: #475161;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
       }
 
       svg {

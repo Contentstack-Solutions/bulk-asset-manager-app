@@ -8,9 +8,17 @@
   padding: 0 1em 0 1em;
 
   .select-wrapper {
-    width: 250px;
+    width: 300px;
     float: left;
     margin-top: 1px;
+
+    .item-qty {
+      color: #475161;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
   }
 
   .global-tag-wrapper {
