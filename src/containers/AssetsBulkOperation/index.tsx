@@ -26,7 +26,6 @@ interface IState {
   isLoading: boolean;
   globalTags: string[];
   resultsLog: string[];
-  isResults: boolean;
 }
 
 interface IImage {
@@ -53,7 +52,6 @@ export class AssetsBulkOperationDashboardWidget extends Component<
       isLoading: false,
       globalTags: [],
       resultsLog: [],
-      isResults: false,
     };
   }
 
@@ -107,7 +105,6 @@ export class AssetsBulkOperationDashboardWidget extends Component<
         selectedAssetFolder: null,
         globalTags: [],
         resultsLog: [],
-        isResults: false,
       });
       let displayImages: any[] = [];
       let images: IImage[] = [];
@@ -137,7 +134,6 @@ export class AssetsBulkOperationDashboardWidget extends Component<
       selectedAssetFolder: null,
       globalTags: [],
       resultsLog: [],
-      isResults: false,
     });
     let displayImages: any[] = [];
     let images: IImage[] = [];
@@ -202,7 +198,6 @@ export class AssetsBulkOperationDashboardWidget extends Component<
                   selectedAssetFolder: null,
                   globalTags: [],
                   resultsLog: [],
-                  isResults: false,
                   isLoading: false,
                 });
                 this.addNotification()
@@ -222,7 +217,6 @@ export class AssetsBulkOperationDashboardWidget extends Component<
       selectedAssetFolder: null,
       globalTags: [],
       resultsLog: [],
-      isResults: false,
     });
   };
 
@@ -289,7 +283,6 @@ export class AssetsBulkOperationDashboardWidget extends Component<
           assetFolders={this.state.assetFolders}
           isLoading={this.state.isLoading}
           uploadImages={this.uploadImages}
-          isResults={this.state.isResults}
         />
 
         <DragAndDropField

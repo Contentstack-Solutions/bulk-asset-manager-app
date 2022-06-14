@@ -13,7 +13,6 @@ interface IProps {
   assetFolders: string[];
   isLoading: boolean;
   uploadImages: Function;
-  isResults: boolean;
 }
 
 class FormField extends Component<IProps> {
