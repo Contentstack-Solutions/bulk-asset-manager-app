@@ -85,7 +85,6 @@ class FormField extends Component<IProps> {
             >
               Upload
             </Button>
-            {/* <Button size='large' icon="MarketplaceSmallFilledWhite" disabled={!this.props.isResults} isFullWidth={false} onClick={this.props.uploadImages}>Results</Button> */}
           </div>
         </div>
       </>
