@@ -4,8 +4,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import DragAndDropField from "./DragAndDropField";
 import FormField from "./FormField";
-// import Results from "./Results";
-import { ToastContainer, toast, TypeOptions } from "react-toastify";
+import { ToastContainer, toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 export let requestHeaders: HeadersInit = new Headers();
@@ -78,7 +77,6 @@ export class AssetsBulkOperationDashboardWidget extends Component<
 
       if (res.parent_uid) {
         let folderName = this.state.umappedAssetFolders.find((folder:any) => folder.uid === res.parent_uid)
-        
         let result = {
           label:  folderName.name + '/' + res.name,
           value: res.uid,
