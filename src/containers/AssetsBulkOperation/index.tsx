@@ -4,8 +4,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import DragAndDropField from "./DragAndDropField";
 import FormField from "./FormField";
-import { ToastContainer, toast} from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export let requestHeaders: HeadersInit = new Headers();
 requestHeaders.set("api_key", `${process.env.REACT_APP_CS_API_KEY}`);
@@ -19,7 +19,7 @@ interface IState {
   appSdkInitialized: boolean;
   displayImages: any;
   images: IImage[];
-  umappedAssetFolders: any[]
+  umappedAssetFolders: any[];
   assetFolders: any;
   selectedAssetFolder: any;
   isLoading: boolean;
@@ -56,9 +56,9 @@ export class AssetsBulkOperationDashboardWidget extends Component<
 
   addNotification = () => {
     toast("Assets uploaded successfully.", {
-      type: 'success',
-      position: 'bottom-center',
-      theme: 'colored'
+      type: "success",
+      position: "bottom-center",
+      theme: "colored",
     });
   };
 
@@ -70,15 +70,16 @@ export class AssetsBulkOperationDashboardWidget extends Component<
     let toJSON = await fetchAssetsFolder.json();
 
     this.setState({
-      umappedAssetFolders: toJSON.assets
-    })
+      umappedAssetFolders: toJSON.assets,
+    });
 
     let mappedResults = await toJSON.assets.map((res: any) => {
-
       if (res.parent_uid) {
-        let folderName = this.state.umappedAssetFolders.find((folder:any) => folder.uid === res.parent_uid)
+        let folderName = this.state.umappedAssetFolders.find(
+          (folder: any) => folder.uid === res.parent_uid
+        );
         let result = {
-          label:  folderName.name + '/' + res.name,
+          label: folderName.name + "/" + res.name,
           value: res.uid,
         };
         return result;
@@ -198,7 +199,7 @@ export class AssetsBulkOperationDashboardWidget extends Component<
                   resultsLog: [],
                   isLoading: false,
                 });
-                this.addNotification()
+                this.addNotification();
               }
             })
             .catch(function (error: any) {
